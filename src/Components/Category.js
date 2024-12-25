@@ -1,61 +1,59 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import {Row,Col} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { useFormik } from 'formik';
+import { CategorySchema} from '../Schemas/validationfile';
+import './Category.css';
+import axios from 'axios';
 
-const foodCategories = [
-    "Fruits",
-    "Vegetables",
-    "Dairy",
-    "Meat",
-    "Grains",
-    "Snacks"
-];
-
-function CategoryForm() {
+function Category() {
     const initialValues = {
-        category: ""
+        category_name: ""
     };
 
-    const {values,handleChange,handleSubmit} = useFormik({
+    const { values, errors, touched, handleChange, handleSubmit } = useFormik({
         initialValues: initialValues,
+        validationSchema: CategorySchema,
         onSubmit: (values, actions) => {
-            console.log(values);
-            actions.resetForm();
+            console.log("Category Added", values);
+                actions.resetForm();
         }
-    });
+    })
+    const addCategory=()=>{
+        
+    };
 
-    return (
-        <Container className='pb-3'>
-            <h1 className='d-flex justify-content-center'>Select Food Category</h1>
+    return (<>
+        <Container className='py-2 px-3 my-3 maincontainer'>
+            <h1 className='d-flex justify-content-center'>ADD TYPE OF PRODUCTS</h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
-                    <Form.Label>Select Food Category</Form.Label>
-                    <Form.Select 
-                        name="category" 
-                        value={values.category} 
-                        onChange={handleChange} 
-                    >
-                        <option value="">--Select a Category--</option>
-                        {foodCategories.map((category, index) => (
-                            <option key={index} value={category}>
-                                {category}
-                            </option>
-                        ))}
-                    </Form.Select>
+                    {/* <Form.Label>Input Text</Form.Label> */}
+                    <Form.Control
+                        type="text"
+                        name="category_name"
+                        value={values.category_name}
+                        onChange={handleChange}
+                        placeholder="Enter some text"
+                    />
+                    {touched.category_name && errors.category_name ? (
+                        <p className="form-error">{errors.category_name}</p>
+                    ) : null}
                 </Form.Group>
                 <Row className="mb-3 d-flex justify-content-center">
-                    <Col xs="auto"> 
+                    <Col xs="auto">
                         <Button variant="outline-primary" type="submit">
                             Submit
                         </Button>
                     </Col>
                 </Row>
             </Form>
+
         </Container>
+        </>
     );
 }
 
-export default CategoryForm;
+export default Category;

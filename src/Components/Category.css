@@ -1,0 +1,84 @@
+/* General container styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.maincontainer {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 800px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border to enhance glass look */
+}
+.maincontainer h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.maincontainer .form-label {
+    font-weight: 700;
+    color: #555;
+    font-size: 1rem;
+}
+
+
+.maincontainer .form-control {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.maincontainer .form-control:focus {
+    border-color: #d87d56;
+    box-shadow: none;
+}
+
+.maincontainer .form-select {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.maincontainer .form-select:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.maincontainer .form-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.maincontainer .btn-outline-primary {
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+    .maincontainer {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .maincontainer h1 {
+        font-size: 1.5rem;
+    }
+} 

@@ -1,0 +1,28 @@
+
+.sidebar-container {
+  position: fixed;
+  left: 0; /* Align sidebar to the left side */
+  top: 0; /* Start from the top of the viewport */
+  width: 12%; /* Default sidebar width */
+  height: 100vh; /* Full height to cover the entire viewport */
+  background-color: #f8f9fa; /* Sidebar background color */
+  transition: width 0.3s ease-in-out; /* Smooth transition for expanding/collapsing */
+  z-index: 1000; /* Ensures the sidebar stays on top of the content */
+}
+
+/* Content styles */
+.products {
+  margin-left: 12%; /* Matches the sidebar's default width */
+  padding: 20px; /* Adds spacing inside the content */
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition for shifting */
+}
+
+/* Sidebar expanded state */
+.sidebar-container.expanded {
+  width: 20%; /* Sidebar expanded width */
+}
+
+/* Content adjustment for expanded sidebar */
+.products.sidebar-expanded {
+  margin-left: 20%; /* Adjust content margin to match expanded sidebar */
+}

@@ -1,0 +1,12 @@
+/* styles.css */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Make the brand bold */
+}
+
+.dropdown-item:hover {
+  background-color: #e2e6ea; /* Change background on hover */
+}
