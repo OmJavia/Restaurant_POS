@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Restaurant_POS  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Restaurant_POS is a React-based web application designed to streamline restaurant operations, focusing on efficient billing, real-time inventory management, and user access control.  
 
-## Available Scripts
+![image](https://github.com/user-attachments/assets/3947ee8f-8dc9-48f9-94da-72a0995af9d5)
 
-In the project directory, you can run:
 
-### `npm start`
+## Features  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Customer Billing**  
+   - Generate bills quickly and efficiently for customers.  
+   - Automatically updates inventory based on the items billed.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Inventory Management**  
+   - Add products to the inventory.  
+   - Track real-time stock levels.  
+   - Automatically deduct purchased items from the inventory after billing.  
 
-### `npm test`
+3. **User Management**  
+   - Add and manage users with access to billing and inventory features.  
+   - Ensure secure operations by restricting sensitive actions to authorized users.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used  
 
-### `npm run build`
+- **React**: Frontend framework for building user interfaces.  
+- **JavaScript**: Application logic.  
+- **HTML & CSS**: Structure and styling of the application.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How It Works  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Billing Process**  
+   - Select items from the inventory for billing.  
+   - The total cost is calculated, and the bill is generated.  
+   - Inventory is automatically updated to reflect the items sold.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Adding Products to Inventory**  
+   - Add new items with details like name, price, and quantity.  
+   - View current inventory status in real time.  
 
-### `npm run eject`
+3. **User Management**  
+   - Register new users with specific roles and permissions.  
+   - Ensure secure operations by limiting access to authorized personnel.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation and Setup  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/OmJavia/Restaurant_POS.git
+   cd Restaurant_POS
