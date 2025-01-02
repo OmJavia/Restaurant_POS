@@ -1,4 +1,4 @@
-# Restaurant_POS  
+# Restaurant_POS App
 
 Restaurant_POS is a React-based web application designed to streamline restaurant operations, focusing on efficient billing, real-time inventory management, and user access control.  
 
